@@ -1,3 +1,5 @@
+//* Um pouco sobre strings em JavaScript
+
 // let umaString = "Uma \"string\""; //* Usar a \ como caracter de escape
 // console.log(umaString);
 

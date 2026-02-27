@@ -1,4 +1,4 @@
-//IF / ELSE
+//* IF / ELSE
 const hora = 20;
 
 if (hora < 12) {

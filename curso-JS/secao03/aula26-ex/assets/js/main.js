@@ -27,12 +27,41 @@ function taskList() {
     li.innerHTML = textInput;
     taskList.appendChild(li);
     resetInputNewTask();
+    btnDeleteTask(li);
   }
 
   function resetInputNewTask() {
     newTask.value = "";
     newTask.focus();
     //Focus() faz com que depois de alguma ação deixe o cursor em foco em alguma parte do site, no nosso exemplo foi no input para adicionar uma nova tarefa.
+  }
+
+  function btnDeleteTask(li) {
+    li.innerText += " ";
+    const button = document.createElement("button");
+    button.innerText = "Apagar";
+    li.appendChild(button);
+    //Atribuir um atributo a um elemento
+    button.setAttribute("class", "apagar");
+    //                   tipo      nome
+  }
+
+  //Delete task
+  document.addEventListener("click", function (e) {
+    const el = e.target;
+    if (el.classList.contains("apagar")) {
+      el.parentElement.remove();
+    }
+  });
+
+  //Save tasks in local storage
+  function saveTasks() {
+    const liTasks = taskList.querySelectorAll("li");
+    const listOfTasks = [];
+
+    for (let task of liTasks) {
+      
+    }
   }
 }
 

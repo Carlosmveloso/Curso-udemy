@@ -1,4 +1,5 @@
 //* Funções Fábrica (Factory Functions)
+//* É uma função normal que retorna um objeto
 
 function criaPessoa(nome, sobrenome, idade, altura, peso) {
     return {

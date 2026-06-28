@@ -1,7 +1,7 @@
-//* Filtrando arrays (Filter, map, reduce)
+//* Filtrando arrays
 
 //* Filter
-//Sempre vai retornar um array, com a mesma quantidade de elementos ou menos
+//Sempre vai retornar um array, com a mesma quantidade de elementos ou menos.
 
 const numeros = [5, 50, 80, 1, 2, 3, 5, 8, 7, 11, 15, 22, 27];
 
